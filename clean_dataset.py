@@ -1,3 +1,6 @@
+# usage: python3 {filepath}
+# eg: python3 data/data.csv
+
 import sys
 from typing import List
 
