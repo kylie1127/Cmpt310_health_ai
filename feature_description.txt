@@ -1,0 +1,29 @@
+Feature Description
+
+1. Dataset Overview
+For this project, we used the Final_Augmented_dataset_Diseases_and_Symptoms.csv file.
+This dataset is the augmented version and it consists of a total of 246,945 samples and 378 columns.
+The "diseases" column is the target variable to be predicted,
+and the remaining 377 columns consist of binary values ​​for each symptom.
+
+2. Binary Symptom Features
+Each symptom is represented by a binary variable with a value of 0 or 1.
+- 1: The symptom is present
+- 0: The symptom is absent
+
+3. Symptom Count Feature (Added Feature)
+Based on the existing symptom binary vector,
+we added a "symptom_count" variable that indicates the total number of symptoms each patient has.
+
+The symptom_count was calculated as follows:
+- Calculate the sum of all symptom columns for each row.
+
+This feature can provide the following information:
+- Overall complexity of the disease
+- An indirect indicator of the severity of the patient's symptoms
+- Helps learn disease patterns with many symptoms.
+
+4. Feature Engineering Purpose
+The purpose of feature engineering is to convert the raw data into a format suitable for machine learning models and provide additional meaningful information to help the model more accurately classify diseases.
+
+The final generated file, X_features.csv, was saved in a format ready for model training.
